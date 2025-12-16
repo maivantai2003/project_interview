@@ -1,0 +1,40 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+*.vs/
+*.user
+*.suo
+
+# VSCode / Rider
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Environment
+appsettings.*.json
+!appsettings.json
+!appsettings.Example.json
+
+# Secrets & Certs
+secrets.json
+*.pfx
+*.key
+*.crt
+
+# Database
+*.db
+*.mdf
+*.ldf
+
+# Uploads
+wwwroot/uploads/
+wwwroot/temp/
+
+# Test
+TestResults/
+coverage/
