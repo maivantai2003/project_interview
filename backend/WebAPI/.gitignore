@@ -6,7 +6,7 @@ obj/
 *.vs/
 *.user
 *.suo
-
+backend/.vs/
 # VSCode / Rider
 .vscode/
 .idea/

@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 191,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{08a1bf1d-7967-4afc-8253-1790862ab8c9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{08a1bf1d-7967-4afc-8253-1790862ab8c9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{08a1bf1d-7967-4afc-8253-1790862ab8c9}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Repositories\\OrderRepository.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "WebAPI\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAawBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:16:53.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Services\\OrderService.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Services\\OrderService.cs",
+              "RelativeToolTip": "WebAPI\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:16:14.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderItemCreateDto.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemCreateDto.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Dtos\\OrderItemCreateDto.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemCreateDto.cs",
+              "RelativeToolTip": "WebAPI\\Dtos\\OrderItemCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:15:35.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Dtos\\OrderItemDto.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemDto.cs",
+              "RelativeToolTip": "WebAPI\\Dtos\\OrderItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:15:30.915Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
