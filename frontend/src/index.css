@@ -1,6 +1,4 @@
 @import "tailwindcss";
-
-/* Custom POS styles */
 body {
   @apply bg-gray-100 text-gray-900;
 }
@@ -16,20 +14,15 @@ custom-toast {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
   border: 1px solid rgba(255, 255, 255, 0.4) !important;
 }
-
-/* Text trong toast */
 .custom-toast-body {
   font-size: 15px;
   font-weight: 500;
   color: #333;
 }
-
-/* Màu pastel cho từng loại toast */
 .Toastify__toast--success {
   background: #e6fffa !important;
   color: #0f766e !important;
 }
-
 .Toastify__toast--error {
   background: #fee2e2 !important;
   color: #b91c1c !important;

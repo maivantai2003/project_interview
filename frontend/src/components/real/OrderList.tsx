@@ -1,8 +1,7 @@
 import { memo } from "react";
 import type { Order } from "../../entities/order.entity";
 import OrderCard from "./OrderCard";
-interface Props {orders: Order[];
-}
+interface Props {orders: Order[];}
 function OrderList({ orders }: Props) {
   return (
     <div className="grid gap-6">
