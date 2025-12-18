@@ -170,8 +170,8 @@ npm run dev
 | --------------- | ------------------------------------------------------------------ |
 | POS Screen      | [http://localhost:3000](http://localhost:3000)                     |
 | Realtime Screen | [http://localhost:3000/realtime](http://localhost:3000/realtime)   |
-| Backend API     | [http://localhost:5100](https://localhost:7148)                     |
-| SignalR Hub     | [http://localhost:5100/order-hub](http://localhost:7148/order-hub) |
+| Backend API     | [http://localhost:7148](https://localhost:7148)                     |
+| SignalR Hub     | [http://localhost:7148/order-hub](http://localhost:7148/order-hub) |
 
 ---
 ---
