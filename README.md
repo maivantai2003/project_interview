@@ -1,78 +1,191 @@
-Cấu trúc project: React, .NET
+# 🧾 POS System – React + ASP.NET + SignalR
 
+## 📌 Mô tả bài toán
+
+Xây dựng một **hệ thống bán hàng (POS) đơn giản** gồm 2 màn hình:
+
+* **POSScreen**: Màn hình bán hàng
+* **RealtimeScreen**: Màn hình hiển thị danh sách đơn hàng realtime
+
+---
+
+## 🎯 Yêu cầu chức năng
+
+### 1️⃣ POS Screen (Màn hình bán hàng)
+
+* Hiển thị danh sách sản phẩm:
+
+  * Tên sản phẩm
+  * Giá bán
+* Thêm sản phẩm vào giỏ hàng
+* Hiển thị tổng tiền
+* Nút **Thanh toán**
+
+**Luồng thanh toán**:
+
+1. Gửi request tạo đơn hàng lên Backend
+2. Hiển thị thông báo **"Thanh toán thành công"**
+3. Xóa giỏ hàng sau khi thanh toán
+
+---
+
+### 2️⃣ Realtime Screen (Màn hình phụ)
+
+* Hiển thị danh sách đơn hàng **realtime**
+* Tự động cập nhật khi có đơn hàng mới (không cần reload)
+* Mỗi đơn hàng bao gồm:
+
+  * Mã đơn hàng
+  * Tổng tiền
+  * Thời gian thanh toán
+
+---
+
+## ⚙️ Backend – Yêu cầu API
+
+| Method | Endpoint      | Mô tả                  |
+| ------ | ------------- | ---------------------- |
+| GET    | /api/products | Lấy danh sách sản phẩm |
+| POST   | /api/orders   | Tạo đơn hàng           |
+| GET    | /api/orders   | Lấy danh sách đơn hàng |
+
+### 🔔 Realtime (SignalR)
+
+* Hub: `/order-hub`
+* Khi tạo đơn hàng thành công, backend phát sự kiện **OrderCreated**
+* Frontend (Realtime Screen) tự động nhận sự kiện và cập nhật UI
+
+### 💾 Lưu trữ dữ liệu
+
+* SQL Server
+* Có seed sẵn danh sách sản phẩm
+* Không cần xây dựng CRUD cho sản phẩm
+
+---
+
+## 🖥️ Frontend
+
+* React + TypeScript
+* React Function Component
+* Axios (gọi REST API)
+* SignalR Client (realtime)
+
+### 📄 Các màn hình
+
+#### POSScreen
+
+* Hiển thị danh sách sản phẩm
+* Thêm sản phẩm vào giỏ hàng
+* Hiển thị tổng tiền
+* Thanh toán & reset giỏ hàng
+
+#### RealtimeScreen
+
+* Hiển thị danh sách đơn hàng
+* Cập nhật realtime qua SignalR
+
+---
+
+## 🏗️ Backend
+
+* ASP.NET Web API (.NET 7 / .NET 8)
+* SignalR
+* Lưu dữ liệu bằng SQL Server (hoặc In-memory tùy cấu hình)
+
+---
+
+## 📁 Cấu trúc project
+
+```bash
 /Project
- ├── backend/WebAPI 
+ ├── backend/
+ │   └── WebAPI
  ├── frontend/
  ├── docker-compose.yml
  ├── .env
  └── README.md
+```
 
-Frontend
-POSScreen:
- Hiển thị danh sách sản phẩm (Tên, Giá)
- Thêm sản phẩm vào giỏ hàng
- Hiển thị tổng tiền
- Nút Thanh toán
- Khi thanh toán:
-  Gửi request tạo đơn hàng lên Backend
-  Hiển thị thông báo "Thanh toán thành công"
-  Xóa giỏ hàng
+---
 
-RealtimeScreen:
- Hiển thị danh sách đơn hàng realtime
- Tự động cập nhật (không cần reload)
- Mỗi đơn hàng gồm:
-  Mã đơn hàng
-  Tổng tiền
-  Thời gian thanh toán
-Backend
- GET api/products – Lấy danh sách sản phẩm
- POST api/orders – Tạo đơn hàng
- GET api/orders – Lấy danh sách đơn hàng
- SignalR realtime: mỗi khi thanh toán thành công sẽ phát sự kiện CreatedOrder để tự động cập nhật danh sách orders mà không cần load trang
-Lưu dữ liệu SQL Server
+## 🐳 Docker
 
-Frontend
-React + TypeScript
-React Function Component
-Axios (gọi API)
-SignalR Client
+* Có Dockerfile cho:
 
-Backend
-ASP.NET Web API (.NET 7 / .NET 8)
-SignalR (Realtime)
-Lưu dữ liệu: In-memory (List) hoặc DB đơn giản
-Seed sẵn danh sách sản phẩm
+  * Backend (.NET)
+  * Frontend (React)
+* Docker Compose để chạy toàn bộ hệ thống
 
-Docker
-Docker Compose
+### ▶️ Chạy bằng Docker Compose
 
-Cách chạy Backend không dùng docker
-clone project: git clone https://github.com/maivantai2003/project_interview.git
+```bash
+docker-compose up --build
+```
+
+---
+
+## ▶️ Chạy project không dùng Docker
+
+### 🔹 Backend
+
+```bash
+git clone https://github.com/maivantai2003/project_interview.git
 cd backend/WebAPI
 dotnet restore
 dotnet run
-port: https://localhost:7148
-Cách chạy Frontend không dùng docker
+```
+
+* URL: `https://localhost:7148`
+
+---
+
+### 🔹 Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
-port: http://localhost:3000
-Chạy frontend, backend bằng docker-compose
-docker-compose up --build
-Truy cập
-Thành phần	URL
-POSScreen	    http://localhost:3000
-RealtimeScreen	http://localhost:3000/realtime
-Backend API	    http://localhost:5100
-SignalR Hub	    http://localhost:5100/order-hub
-⚡ Realtime (SignalR)
-Hub: /order-hub
-Khi tạo đơn hàng thành công gọi event OrderCreated Frontend Realtime Screen sẽ tự động nhận và cập nhật UI.
-✅ Ghi chú
-Sản phẩm được seed sẵn, không cần CRUD sản phẩm
-Dữ liệu đơn hàng có thể reset khi restart backend
-Người thực hiện
-Mai Văn Tài
-📜 License
+```
+
+* URL: `http://localhost:3000`
+
+---
+
+## 🌐 Truy cập hệ thống
+
+| Thành phần      | URL                                                                |
+| --------------- | ------------------------------------------------------------------ |
+| POS Screen      | [http://localhost:3000](http://localhost:3000)                     |
+| Realtime Screen | [http://localhost:3000/realtime](http://localhost:3000/realtime)   |
+| Backend API     | [http://localhost:5100](http://localhost:5100)                     |
+| SignalR Hub     | [http://localhost:5100/order-hub](http://localhost:5100/order-hub) |
+
+---
+
+## ⚡ Realtime với SignalR
+
+* Hub: `/order-hub`
+* Event: **OrderCreated**
+* Khi đơn hàng được tạo:
+
+  * Backend phát sự kiện
+  * Frontend Realtime Screen nhận sự kiện
+  * UI tự động cập nhật danh sách đơn hàng
+
+---
+
+## ✅ Ghi chú
+
+* Danh sách sản phẩm được seed sẵn
+* Không cần CRUD sản phẩm
+* Dữ liệu đơn hàng có thể reset khi restart backend
+
+---
+
+## 👤 Người thực hiện
+
+**Mai Văn Tài**
+---
+## 📜 License
+
 MIT License
