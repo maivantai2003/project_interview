@@ -1,6 +1,5 @@
-# 🧾 POS System – React + ASP.NET + SignalR
 
-## 📌 Mô tả bài toán
+## 📌 Yêu cầu
 
 Xây dựng một **hệ thống bán hàng (POS) đơn giản** gồm 2 màn hình:
 
