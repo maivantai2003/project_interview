@@ -27,6 +27,7 @@ namespace WebAPI.Data
                 .WithOne(oi => oi.Product)
                 .HasForeignKey(oi => oi.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
+           modelBuilder.Entity<Order>().HasIndex(o => o.OrderDate);
             base.OnModelCreating(modelBuilder);
         }
     }

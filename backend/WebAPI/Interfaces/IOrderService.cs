@@ -8,7 +8,7 @@ namespace WebAPI.Interfaces
     {
         Task<ApiResponse<IEnumerable<OrderDto>>> GetAllOrders();
         Task<ApiResponse<OrderDto>> GetOrderById(int id);
-        Task<ApiResponse<bool>> CreateOrder(OrderCreateDto orderDto);
+        Task<ApiResponse<OrderDto>> CreateOrder(OrderCreateDto orderDto);
         Task<ApiResponse<OrderDto>> UpdateOrder(int id, OrderUpdateDto order);
     }
 }

@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "D:\\Project\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\wait-for-mssql.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\wait-for-mssql.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\hubs\\orderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\hubs\\orderhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,80 +63,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\.gitignore",
-              "RelativeDocumentMoniker": "WebAPI\\.gitignore",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\.gitignore",
-              "RelativeToolTip": "WebAPI\\.gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-17T16:49:48.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "wait-for-mssql.sh",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\wait-for-mssql.sh",
-              "RelativeDocumentMoniker": "WebAPI\\wait-for-mssql.sh",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\wait-for-mssql.sh",
-              "RelativeToolTip": "WebAPI\\wait-for-mssql.sh",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
-              "WhenOpened": "2025-12-17T16:42:02.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Dockerfile",
-              "RelativeDocumentMoniker": "WebAPI\\Dockerfile",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Dockerfile",
-              "RelativeToolTip": "WebAPI\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-17T16:38:51.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Program.cs",
-              "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:34:45.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\Project\\backend\\WebAPI\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "WebAPI\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA6wCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:24:26.2Z",
+              "WhenOpened": "2025-12-17T20:08:48.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderHub.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Hubs\\OrderHub.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Hubs\\OrderHub.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Hubs\\OrderHub.cs",
-              "RelativeToolTip": "WebAPI\\Hubs\\OrderHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:24:23.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T20:06:53.214Z"
             }
           ]
         },

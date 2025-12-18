@@ -5,18 +5,23 @@
 namespace WebAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class add_products : Migration
+    public partial class Create_Index_OrderDate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.CreateIndex(
+                name: "IX_Orders_OrderDate",
+                table: "Orders",
+                column: "OrderDate");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.DropIndex(
+                name: "IX_Orders_OrderDate",
+                table: "Orders");
         }
     }
 }

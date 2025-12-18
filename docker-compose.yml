@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend/WebAPI
+      dockerfile: Dockerfile
+    ports:
+      - "5100:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - Frontend=${URL}
+      - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=project;User Id=sa;Password=${SQL_SA_PASSWORD};TrustServerCertificate=True;
+    depends_on:
+      - mssql
+    networks:
+      - order-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_URL_API: ${VITE_URL_API}
+        VITE_APP_HUB_URL: ${VITE_APP_HUB_URL}
+    ports:
+      - "3000:80"
+    environment:
+      - ENV=${ENV}
+    depends_on:
+      - backend
+    networks:
+      - order-network
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    ports:
+      - "1433:1433"
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${SQL_SA_PASSWORD}
+      - MSSQL_PID=Developer
+    volumes:
+      - mssql-data:/var/opt/mssql
+    networks:
+      - order-network
+
+volumes:
+  mssql-data:
+networks:
+  order-network:
+    driver: bridge

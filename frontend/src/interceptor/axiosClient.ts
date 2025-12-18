@@ -7,3 +7,4 @@ export const axiosClient = axios.create({
     "Content-Type": "application/json",
   },
 });
+console.log(config.URL_API)

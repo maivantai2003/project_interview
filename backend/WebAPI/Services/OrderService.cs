@@ -7,7 +7,7 @@ namespace WebAPI.Services
 {
     public class OrderService(IOrderRepository _orderRepository,IUnitOfWork _unitOfWork) : IOrderService
     {
-        public async Task<ApiResponse<bool>> CreateOrder(OrderCreateDto orderDto)
+        public async Task<ApiResponse<OrderDto>> CreateOrder(OrderCreateDto orderDto)
         {
             await _unitOfWork.BeginTransactionAsync();
             try
@@ -26,11 +26,12 @@ namespace WebAPI.Services
                 };
                 await _orderRepository.CreateOrder(order);
                 await _unitOfWork.CommitAsync();
-                return ApiResponse<bool>.SuccessResponse("Order created successfully", true);
+                var response=await _orderRepository.GetOrderById(order.OrderId);
+                return ApiResponse<OrderDto>.SuccessResponse("Order created successfully",response);
             }
             catch(Exception ex)
             {
-                return ApiResponse<bool>.ErrorResponse("Failed to create order", new List<string> { ex.Message });
+                return ApiResponse<OrderDto>.ErrorResponse("Failed to create order", new List<string> { ex.Message });
             }
         }
 

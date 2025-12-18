@@ -12,8 +12,8 @@ using WebAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251216084523_add_products")]
-    partial class add_products
+    [Migration("20251217195555_Create_Index_OrderDate")]
+    partial class Create_Index_OrderDate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,8 @@ namespace WebAPI.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderId");
+
+                    b.HasIndex("OrderDate");
 
                     b.ToTable("Orders");
                 });

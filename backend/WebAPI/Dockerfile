@@ -19,4 +19,4 @@ RUN sed -i 's/\r$//' /app/wait-for-mssql.sh \
 ENV ASPNETCORE_URLS=http://+:80
 ENV DOTNET_ENVIRONMENT=Production
 EXPOSE 80
-ENTRYPOINT ["/app/wait-for-mssql.sh", "sql-server", "1433", "dotnet", "WebAPI.dll"]
+ENTRYPOINT ["/app/wait-for-mssql.sh", "mssql", "1433", "dotnet", "WebAPI.dll"]

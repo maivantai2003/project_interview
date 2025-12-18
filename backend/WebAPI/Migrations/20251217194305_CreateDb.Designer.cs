@@ -12,7 +12,7 @@ using WebAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251216081345_CreateDb")]
+    [Migration("20251217194305_CreateDb")]
     partial class CreateDb
     {
         /// <inheritdoc />
@@ -40,9 +40,11 @@ namespace WebAPI.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Total")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderId");
@@ -68,6 +70,7 @@ namespace WebAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderItemId");
@@ -97,6 +100,7 @@ namespace WebAPI.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ProductId");
@@ -115,7 +119,7 @@ namespace WebAPI.Migrations
                     b.HasOne("WebAPI.Models.Product", "Product")
                         .WithMany("OrderItems")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Order");

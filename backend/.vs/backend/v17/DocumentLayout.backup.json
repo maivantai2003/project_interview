@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\Project\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\dtos\\orderitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|d:\\project\\backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91D5E407-3515-4529-9C92-1BED5D6E63A4}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,53 +63,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Repositories\\OrderRepository.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "WebAPI\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAawBoAAAArAAAAAAAAAA==",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwB0AAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:16:53.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Services\\OrderService.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Services\\OrderService.cs",
-              "RelativeToolTip": "WebAPI\\Services\\OrderService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:16:14.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderItemCreateDto.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemCreateDto.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Dtos\\OrderItemCreateDto.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemCreateDto.cs",
-              "RelativeToolTip": "WebAPI\\Dtos\\OrderItemCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:15:35.056Z",
+              "WhenOpened": "2025-12-17T20:08:48.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderItemDto.cs",
-              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemDto.cs",
-              "RelativeDocumentMoniker": "WebAPI\\Dtos\\OrderItemDto.cs",
-              "ToolTip": "D:\\Project\\backend\\WebAPI\\Dtos\\OrderItemDto.cs",
-              "RelativeToolTip": "WebAPI\\Dtos\\OrderItemDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAWAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\backend\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "D:\\Project\\backend\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T16:15:30.915Z",
+              "WhenOpened": "2025-12-17T20:06:53.214Z",
               "EditorCaption": ""
             }
           ]

@@ -46,6 +46,8 @@ namespace WebAPI.Migrations
 
                     b.HasKey("OrderId");
 
+                    b.HasIndex("OrderDate");
+
                     b.ToTable("Orders");
                 });
 
