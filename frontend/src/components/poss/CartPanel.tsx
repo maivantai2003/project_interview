@@ -9,7 +9,7 @@ interface Props {cart: CartItem[];
 }
 export default function CartPanel({cart, total, onIncrease, onDecrease, onRemove, onCheckout}: Props) {
     return (
-    <div className="border rounded-2xl p-4 shadow flex flex-col">
+    <div className="border rounded-2xl p-4 shadow flex flex-col h-full min-h-0">
       <h2 className="text-xl font-semibold mb-3">Giỏ hàng</h2>
       <div className="flex-1 overflow-y-auto space-y-2">
         {cart.length === 0 && (

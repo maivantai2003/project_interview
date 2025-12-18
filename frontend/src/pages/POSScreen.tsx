@@ -45,7 +45,7 @@ function POSScreen() {
   const checkout = async () => {
     if (!cart.length) return;
     if (!window.confirm("Bạn có chắc muốn thanh toán không?")) return;
-    await OrderService.createOrders({
+    const response=await OrderService.createOrders({
       totalAmount: total,
       total: cart.reduce((s, i) => s + i.quantity, 0),
       items: cart.map(x => ({
@@ -54,9 +54,13 @@ function POSScreen() {
         unitPrice: x.unitPrice,
       })),
     });
-
-    setCart([]);
-    toast.success("Thanh toán thành công");
+    console.log(response)
+    if(response.success){
+      setCart([]);
+      toast.success("Thanh toán thành công");
+    }else{
+      toast.error("Thanh toán không thành công "+response.message);
+    }
   };
   return (<div className="h-[calc(100vh-120px)] grid grid-cols-3 gap-6">
       <ProductGrid

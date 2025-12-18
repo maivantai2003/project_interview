@@ -9,7 +9,7 @@ namespace WebAPI.Services
         public async Task<ApiResponse<List<Product?>>> GetAllProduct()
         {
             var response = await _productRepository.GetAllProduct();
-            return ApiResponse<List<Product?>>.SuccessResponse("Products retrieved successfully", response);
+            return ApiResponse<List<Product?>>.SuccessResponse("Lấy danh sách thành công", response);
         }
     }
 }

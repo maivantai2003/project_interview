@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
             if (response.Success)
             {
                 await _orderHub.Clients.All.SendAsync("OrderCreated", response.Data);
-                return Ok(response.Data);
+                return Ok(response);
             }
             return BadRequest(response.Errors);
         }

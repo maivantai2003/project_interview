@@ -2,7 +2,9 @@ import { memo } from "react";
 import { motion } from "framer-motion";
 import type { Order } from "../../entities/order.entity";
 import { formatDateTimeVN } from "../../helpers/date";
-interface Props {order: Order;}
+interface Props {
+  order: Order;
+}
 function OrderCard({ order }: Props) {
   return (
     <motion.div
@@ -23,28 +25,36 @@ function OrderCard({ order }: Props) {
 
       <div className="space-y-4 mb-4">
         {order.items.map((i) => (
-          //   <OrderItem key={i.productId} item={i} />
-          <div className="flex items-center rounded-xl px-4 py-3 border hover:shadow transition">
+          <div
+            key={i.productId}
+            className="flex items-center rounded-xl px-4 py-4 border border-gray-200 bg-blue-50 shadow-sm 
+                    hover:bg-blue-100 
+                    hover:shadow-md 
+                    transition"
+          >
             <img
               src={i.imageUrl}
               alt={i.name}
-              className="w-16 h-16 rounded-lg mr-4"
+              className="w-20 h-20 object-cover rounded-lg mr-5"
             />
 
             <div className="flex-1">
-              <div className="font-semibold">{i.name}</div>
+              <div className="text-base font-semibold text-gray-800">
+                {i.name}
+              </div>
               {i.description && (
-                <div className="text-sm text-gray-500 line-clamp-2">
+                <div className="text-sm text-gray-500 mt-1">
                   {i.description}
                 </div>
               )}
             </div>
 
-            <div className="ml-4 text-right">
-              <div className="text-xs bg-blue-100 text-blue-700 rounded-full px-2">
-                x{i.quantity}
+            <div className="ml-6 text-right">
+              <div className="text-sm text-gray-600 mb-1">
+                Số lượng:{" "}
+                <span className="font-medium text-blue-600">x{i.quantity}</span>
               </div>
-              <div className="font-bold mt-1">
+              <div className="text-base font-bold text-green-600">
                 {(i.unitPrice * i.quantity).toLocaleString()} đ
               </div>
             </div>
