@@ -125,8 +125,13 @@ docker-compose up --build
 ```bash
 git clone https://github.com/maivantai2003/project_interview.git
 cd backend/WebAPI
-dotnet restore
+dotnet restor
 dotnet run
+```
+### 🔹 Chạy các lệnh để tạo, cập nhật Database
+```
+Add-Migration initDb
+Update-Database
 ```
 ### 🔹 Sửa lại chuỗi ConnectionStrings trong WebAPI/appsettings.json cho phù hợp và URL của Frontend khi cấu hình CORS
 ```

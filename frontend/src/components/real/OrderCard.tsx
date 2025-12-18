@@ -16,7 +16,7 @@ function OrderCard({ order }: Props) {
         <div>
           Mã đơn: <b>HĐ#{order.orderId}</b>
         </div>
-        <div className="text-sm text-gray-500">
+        <div className="text-sm text-red-500">
           {formatDateTimeVN(order.orderDate)}
         </div>
       </div>
