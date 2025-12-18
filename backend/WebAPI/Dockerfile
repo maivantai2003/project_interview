@@ -1,16 +1,15 @@
-﻿# Stage 1: Build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+﻿FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["WebAPI.csproj", "./"]
 RUN dotnet restore --disable-parallel
 COPY . .
 RUN dotnet publish -c Release -o /app/publish
+#
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 RUN apt-get update && \
     apt-get install -y netcat-openbsd && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
-
 COPY --from=build /app/publish .
 COPY wait-for-mssql.sh /app/wait-for-mssql.sh
 RUN sed -i 's/\r$//' /app/wait-for-mssql.sh \
