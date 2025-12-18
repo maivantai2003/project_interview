@@ -125,7 +125,7 @@ docker-compose up --build
 ```bash
 git clone https://github.com/maivantai2003/project_interview.git
 cd backend/WebAPI
-dotnet restor
+dotnet restore
 dotnet run
 ```
 ### 🔹 Chạy các lệnh để tạo, cập nhật Database
