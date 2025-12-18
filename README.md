@@ -58,9 +58,6 @@ Xây dựng một **hệ thống bán hàng (POS) đơn giản** gồm 2 màn h�
 ### 💾 Lưu trữ dữ liệu
 
 * SQL Server
-* Có seed sẵn danh sách sản phẩm
-* Không cần xây dựng CRUD cho sản phẩm
-
 ---
 
 ## 🖥️ Frontend
@@ -70,28 +67,26 @@ Xây dựng một **hệ thống bán hàng (POS) đơn giản** gồm 2 màn h�
 * Axios (gọi REST API)
 * SignalR Client (realtime)
 
-### 📄 Các màn hình
+### 📄 Màn hình
 
 #### POSScreen
 
 * Hiển thị danh sách sản phẩm
 * Thêm sản phẩm vào giỏ hàng
 * Hiển thị tổng tiền
-* Thanh toán & reset giỏ hàng
+* Thanh toán & clear giỏ hàng
 
 #### RealtimeScreen
 
 * Hiển thị danh sách đơn hàng
-* Cập nhật realtime qua SignalR
-
+* Cập nhật realtime
 ---
 
 ## 🏗️ Backend
 
-* ASP.NET Web API (.NET 7 / .NET 8)
+* ASP.NET Web API (.NET 8)
 * SignalR
-* Lưu dữ liệu bằng SQL Server (hoặc In-memory tùy cấu hình)
-
+* Lưu dữ liệu SQL Server
 ---
 
 ## 📁 Cấu trúc project
@@ -110,11 +105,11 @@ Xây dựng một **hệ thống bán hàng (POS) đơn giản** gồm 2 màn h�
 
 ## 🐳 Docker
 
-* Có Dockerfile cho:
+* Dockerfile:
 
   * Backend (.NET)
   * Frontend (React)
-* Docker Compose để chạy toàn bộ hệ thống
+* Docker Compose để chạy toàn bộ project
 
 ### ▶️ Chạy bằng Docker Compose
 
@@ -134,7 +129,22 @@ cd backend/WebAPI
 dotnet restore
 dotnet run
 ```
-
+### 🔹 Sửa lại chuỗi ConnectionStrings trong WebAPI/appsettings.json cho phù hợp và URL của Frontend khi cấu hình CORS
+```
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=WebAPIDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+  "Frontend": "http://localhost:xxxx"
+}
+```
 * URL: `https://localhost:7148`
 
 ---
